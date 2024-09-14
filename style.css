@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Formatação geral para todos as listas */
+.listas {
+  list-style: none;
+}
+
+/* Menu de navegação, estilo geral */
+nav {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 1000;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
+  background: rgba(217, 179, 145, 0.57);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(217, 179, 145, 0.3);
+}
+
+/* Div que armazena logo e texto do menu */
+#logoMenu {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+/* Imagem da logo no menu */
+#logoMenu img {
+  max-width: 2.8rem;
+  max-height: 2.8rem;
+  margin-right: 10px;
+}
+
+/* Texto da div do menu */
+#logoMenu p {
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: rgba(50, 89, 44, 1);
+  margin-top: 5px;
+}
+
+/* Lista de itens do menu */
+#listaMenu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1.5rem;
+  align-items: center;
+}
+
+/* Itens da lista dentro do menu */
+#listaMenu li {
+  align-items: center;
+  margin: 0 5px;
+  justify-content: center;
+  padding: 25px 15px;
+}
+
+/* Links dentro do menu */
+#listaMenu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(38, 10, 4, 1);
+  text-shadow: 2px 2px 4px rgba(115, 60, 29, 0.05);
+
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Formatação para quado o usuario interagir com o menu */
+#listaMenu li:hover {
+  background-color: rgba(191, 155, 111, 1);
+  transform: scale(1.05);
+}
+
+/* Remove o hover do último item (check box) */
+#listaMenu li:last-child:hover {
+  background-color: transparent;
+}
+
+/* Estilizando a check box do dark mode */
+
+/* Retirando um pouco da margem para ficar melhor */
+#listaMenu li:last-child {
+  background-color: transparent;
+  padding: 0;
+  padding-left: 5px;
+}
+
+/* Retirando o padrão de check box normal */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Colocando o icone de lua no check box */
+label#darkModeLabel {
+  background-size: cover;
+  background-image: url("./imagens/icons/lua-crescente.png");
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  filter: invert(100%);
+  opacity: 70%;
+}
+
+/* colocando o icone de sol no checkBox quando no dark mode ativo */
+input[type="checkbox"]:checked + label#darkModeLabel {
+  background-image: url("./imagens/icons/solar.png");
+  filter: invert(100%);
+}
+
+/* Estilização do cabeçalho*/
+
+/* Ajustando fundo do cabeçalho */
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./imagens/fundos/fundoFinal2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  position: relative;
+}
+
+/* Ajustando padding dos itens no cabeçalho */
+#itensCabecalho {
+  text-align: right;
+  padding-top: 13em;
+  padding-left: 32rem;
+}
+
+/* ajustando logo no cabeçalho */
+#itensCabecalho img {
+  width: 14.5em;
+}
+
+/* Ajustando texto no cabeçalho */
+#logoCabecalho p {
+  font-size: 5.3em;
+  font-weight: 600;
+}
+
+/* Ajustando a logo do cabeçalho */
+#logoCabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texto Beleza da Terra no cabeçalho */
+#nomeCabecalho {
+  font-size: 3rem;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(50, 89, 44);
+}
+
+/* Estilizando o slogam no cabeçalho */
+#sloganCabecalho {
+  font-size: 1.8rem;
+  color: rgba(50, 89, 44, 0.8);
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 0.5em 0;
+  border-top: 2px solid rgba(50, 89, 44, 0.8);
+  border-bottom: 2px solid rgba(50, 89, 44, 0.8);
+}
+
+/*---------------------- Inicio do main ------------------------*/
+
+/* Seção de beneficios */
+
+/* Divisor geral da seção */
+#secaoBeneficios {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 30px solid rgba(50, 89, 44, 0.8);
+  border-bottom: 30px solid rgba(50, 89, 44, 0.8);
+}
+
+/* Divs de itens dos beneficios */
+.itemBeneficio {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/* Imagens dos beneficios */
+.itemBeneficio img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Textos dos beneficios */
+.itemBeneficio p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  position: relative;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* Efeito de linhas em baixo dos textos */
+.itemBeneficio p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.itemBeneficio:hover img {
+  transform: scale(1.1);
+}
+
+.itemBeneficio:hover p::after {
+  width: 100%;
+  left: 0;
+}
+
+/* ----------------- Seção de sobre nós ----------------*/
+
+#secaoSobre {
+  background-image: url("./imagens/fundos/acai.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 1120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Elemanteo de separação de seçao */
+#imagensSeparacaoSobre {
+  display: flex;
+  align-items: center;
+}
+/* imagem dos potes na seção sobre */
+#potesSobre {
+  width: 16rem;
+  margin: 2rem 5rem;
+}
+
+.iconLinha {
+  height: 1.2rem;
+}
+
+/* Edição geral para os textos sobre */
+.textosSobre {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(50, 89, 44, 1);
+}
+
+/* Testos de testaque na seção de sobre */
+.textosSobre span {
+  color: rgba(94, 166, 75, 1);
+}
+
+#sobreTextos {
+  margin: 0 10rem;
+}
+
+#containerSobreIngredientes {
+  display: flex;
+  margin: 2rem 8rem;
+  flex-wrap: wrap;
+}
+
+.sobreIngrediente {
+  /* From https://css.glass */
+  background: rgba(94, 166, 91, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(94, 166, 75, 0.4);
+  margin-right: 2rem;
+
+  width: 20rem;
+
+  padding: 1rem;
+  align-items: center;
+
+  transition: transform 0.3s ease;
+}
+
+.sobreIngrediente {
+  margin-bottom: 2rem;
+}
+
+.sobreIngrediente:last-child {
+  margin-right: 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.sobreIngrediente:first-child {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* Alinhamento das imagens */
+.sobreIngrediente img {
+  width: 100%;
+  height: auto;
+  max-height: 14rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.sobreIngrediente p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(64, 29, 21, 1);
+}
+
+.sobreIngrediente p:first-of-type {
+  margin-bottom: 15px;
+}
+
+.sobreIngrediente span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.sobreIngrediente:hover {
+  outline: 3px solid rgba(115, 60, 29, 1);
+  background-color: rgba(191, 155, 111, 0.4);
+}
+
+/*------------------ Seção de produtos------------------- */
+
+/* Seção de inicio de apresentação dos produtos */
+#containerInicioProdutos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 5rem;
+}
+
+#containerInicioProdutos img {
+  width: 5rem;
+}
+
+#containerInicioProdutos p {
+  margin: 0 6rem;
+  font-size: 1.8rem;
+  font-weight: 00;
+  color: rgba(50, 89, 44, 1);
+}
+
+/* ----------Carrosel de produtos------------- */
+
+.carrosselContainer {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.4s ease;
+  height: 100%;
+}
+
+.produtos {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  font-size: 24px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(217, 179, 145, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(64, 29, 21, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(217, 179, 145, 0.3);
+}
+
+.anterior,
+.proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(191, 117, 75, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 30px;
+  z-index: 10;
+}
+
+.anterior {
+  left: 10px;
+}
+
+.proximo {
+  right: 10px;
+}
+
+.anterior:hover,
+.proximo:hover {
+  background-color: rgba(140, 88, 42, 0.5);
+}
+
+.carrossel img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.nomeProduto {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(50, 89, 44, 1);
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+.descricaoProduto {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.descricaoProduto span {
+  color: rgba(94, 166, 75, 1);
+}
+
+
+
+/*------------------ Seção de seja um parceiro -------------------*/
+
+#secaoParceiro {
+  width: 100vw;
+  height: 1000px;
+  background-image: url("./imagens/fundos/folhas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  position: relative;
+}
+
+/* --------------------Rodape (footer) -------------------------*/
+
+footer {
+  background-color: rgba(191, 140, 111, 1);
+  height: 300px;
+}

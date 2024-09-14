@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,30 @@
 
     <script defer type="text/javascript" src="codigo.js"></script>
 
-    <title>Fios de luz</title>
+    <!-- Icone do site -->
+    <link rel="icon" href="./imagens/icons/logo-branco.jpeg">
+
+    <!-- Fontes usadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <title>Beleza da Terra</title>
 </head>
+
 <body>
-    
+
     <!-- Menu de navegação -->
     <nav>
         <div id="logoMenu">
-            <img id="logoImg" src="" alt=".">
-            <p>Fios de Luz</p>
+            <img src="./imagens/icons/logo.png" alt=".">
+            <p>Beleza da Terra</p>
         </div>
         <ul class="listas" id="listaMenu">
             <li><a href="#inicio">Início</a></li>
@@ -28,21 +44,299 @@
             <!--inserindo o botão de por dark mode -->
             <li>
                 <input type="checkbox" id="darkModeCheck">
-                <label for="darkModeCheck" id="checkBoxLabel"></label>
+                <label for="darkModeCheck" id="darkModeLabel"></label>
             </li>
         </ul>
     </nav>
 
+    <!-- Cabeçalho da pagina, com imagem principal e demais itens -->
     <header>
-
+        <div id="itensCabecalho">
+            <div id="logoCabecalho">
+                <img src="./imagens/icons/logo.png" alt=".">
+                <p id="nomeCabecalho">Beleza da Terra</p>
+            </div>
+            <p id="sloganCabecalho">Trazendo a força da natureza para seus cabelos.</p>
+        </div>
     </header>
 
     <main>
 
+        <section id="secaoBeneficios">
+
+            <div class="itemBeneficio">
+                <img src="./imagens/outros/acai.jpg" alt="">
+                <p>Ingredientes 100% Naturais</p>
+            </div>
+            <div class="itemBeneficio">
+                <img src="./imagens/outros/oleo.jpg" alt="">
+                <p>Livre de Parabenos e Sulfatos</p>
+            </div>
+            <div class="itemBeneficio">
+                <img src="./imagens/outros/potesJoias.jpg" alt="">
+                <p>Resultados Profissionais</p>
+            </div>
+        </section>
+
+        <section id="secaoSobre">
+            <div id="imagensSeparacaoSobre">
+                <img class="iconLinha" id="linhaE" src="./imagens/icons/linhaE.png" alt="">
+                <img id="potesSobre" src="./imagens/icons/icon-potes.png" alt="">
+                <img class="iconLinha" id="LinhaD" src="./imagens/icons/linhaD.png" alt="">
+            </div>
+            <div id="sobreTextos">
+                <p class="textosSobre">A <span>Beleza da Terra</span> foi fundada em 2023 com o objetivo de
+                    <span>trazer a riqueza dos ingredientes brasileiros</span> para o mercado de beleza profissional.
+                </p>
+                <br>
+                <p class="textosSobre">Com a missão de promover a <span> beleza natural, sustentabilidade, cuidado com o
+                        meio ambiente, e
+                        responsabilidade social</span> com comunidades que colhem os ingredientes.
+                </p>
+                <br>
+                <p class="textosSobre">Garantimos práticas <span>sustentáveis</span> e apoiamos comunidades locais.</p>
+            </div>
+            <br>
+            <br>
+            <div>
+                <p class="textosSobre">
+                    Utilizando sempre os <span>melhores</span> ingredientes:
+                </p>
+                <br>
+                <div id="containerSobreIngredientes">
+                    <div class="sobreIngrediente">
+                        <img src="./imagens/ingredientes/cupuacu.jpeg" alt="">
+                        <p>
+                            <span>Cupuaçu da Amazônia</span>
+                        </p>
+                        <p>Nutre e hidrata profundamente.</p>
+                    </div>
+                    <div class="sobreIngrediente">
+                        <img src="./imagens/ingredientes/acai.jpeg" alt="">
+                        <p>
+                            <span>Açaí do Pará</span>
+                        <p>Rico em antioxidantes que restauram a vitalidade.</p>
+                        </p>
+                    </div>
+                    <div class="sobreIngrediente">
+                        <img src="./imagens/ingredientes/buriti.jpeg" alt="">
+                        <p>
+                            <span>Buriti do Cerrado</span>
+                        <p>Protege contra danos causados pelo sol.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secaoProdutos">
+            <div id="containerInicioProdutos">
+                <img src="./imagens/icons/icon-folhas.png" alt="">
+                <p>Transforme o seu salão com nossos produtos.
+                    <br>
+                    Conheça nossa linha completa.
+                </p>
+                <img src="./imagens/icons/icon-folhasD.png" alt="">
+            </div>
+
+            <!-- inicio do carrossel de produtos -->
+            <div class="carrosselContainer">
+                <button class="anterior" onclick="moverParaEsquerda()">&#10094;</button>
+                <div class="carrossel">
+                    <div class="produtos">
+                        <img src="./imagens/produtos/shampoo.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Shampoo Natural Brilho Vital
+                            </p>
+                            <p class="descricaoProduto">
+                                Limpa suavemente os fios, preservando os
+                                óleos naturais do
+                                cabelo e deixando um  <span>brilho radiante</span>. Formulado com <span>Açaí</span> do Pará, conhecido por suas
+                                propriedades
+                                antioxidantes, e <span>Cupuaçu</span> da Amazônia, que hidrata profundamente e repara os danos
+                                causados pela exposição ao
+                                sol e poluição. Ideal para <span>todos os tipos de cabelo</span>, especialmente cabelos secos ou
+                                opacos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/mascara.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Máscara de Hidratação Intensa com Murumuru
+                            </p>
+                            <p class="descricaoProduto">
+                                Perfeita para cabelos
+                                extremamente secos e
+                                danificados. A manteiga de <span>Murumuru</span>, proveniente da região Amazônica, penetra
+                                profundamente nos fios,
+                                restaurando a <span>maciez e o brilho perdidos</span>. Esta máscara atua como uma reparação
+                                profunda, proporcionando
+                                <span>hidratação intensa</span> e desembaraçando os cabelos com facilidade. Ideal para uso
+                                semanal em salões ou em casa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/oleo2.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Óleo Capilar Reparador Buriti & Pracaxi
+                            </p>
+                            <p class="descricaoProduto">
+                                Ideal para cabelos
+                                danificados ou quimicamente
+                                tratados. O <span>óleo de Buriti</span>, extraído do Cerrado brasileiro, é rico em pró-vitamina
+                                A, que protege os cabelos
+                                contra os danos causados pelo sol. O <span>óleo de Pracaxi</span>, vindo da Amazônia, ajuda a
+                                <span>restaurar a elasticidade e
+                                força dos fios</span>, controlando o frizz e as pontas duplas. Pode ser utilizado antes ou
+                                após a secagem, como
+                                tratamento noturno ou para finalizar penteados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/serum.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Sérum Anti-Frizz Nature Castanha-do-Pará
+                            </p>
+                            <p class="descricaoProduto">
+                                Solução leve e eficaz para cabelos
+                                rebeldes. Enriquecido com óleo
+                                de <span>Castanha-do-Pará</span>, nativa da Floresta Amazônica, este sérum cria uma barreira
+                                protetora ao redor do fio,
+                                bloqueando a umidade e prevenindo o frizz. Ideal para ser usado como finalizador,
+                                deixando os cabelos com um
+                                toque <span>sedoso e leve</span>, sem pesar. Adequado para qualquer clima, especialmente para
+                                ambientes úmidos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/condicionador.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Condicionador Nutritivo de Açaí e Cupuaçu
+                            </p>
+                            <p class="descricaoProduto">
+                                Desembaraça e hidrata os fios
+                                de maneira profunda,
+                                trazendo de volta a <span>maciez e o brilho</span> natural do cabelo. O <span>Açaí</span>, com suas
+                                propriedades antioxidantes,
+                                combate os radicais livres e o Cupuaçu, com sua capacidade de reter água,
+                                proporciona uma <span>hidratação
+                                prolongada</span>, deixando os cabelos macios e protegidos contra agressões externas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/leave-in.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Leave-in Fortalecedor com Queratina Vegetal </p>
+                            <p class="descricaoProduto">
+                                Fórmula sem enxágue que ajuda a fortalecer
+                                os fios da raiz às
+                                pontas. Contém <span>Queratina Vegetal</span> e <span>Óleo de Andiroba, que penetram</span> no cabelo e
+                                <span>reparam danos</span> causados por
+                                química e calor. Oferece uma proteção térmica eficaz, sendo ideal para uso antes de
+                                secadores e pranchas.
+                                Mantém os <span>cabelos suaves e maleáveis</span> durante todo o dia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/spray.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Spray Revitalizante Água de Coco & Babosa
+                            </p>
+                            <p class="descricaoProduto">
+                                Perfeito para hidratar os
+                                cabelos ao longo do dia,
+                                proporcionando <span>frescor e revitalização</span> instantâneos. A <span>Água de Coco</span> ajuda a repor os
+                                minerais e vitaminas
+                                dos fios, enquanto a <span>Babosa</span> promove uma hidratação leve, sem pesar. Pode ser
+                                aplicado nos cabelos úmidos ou
+                                secos, ideal para o uso diário.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <img src="./imagens/produtos/ampola.jpg" alt="">
+                        <div class="textoProduto">
+                            <p class="nomeProduto">
+                                Ampola de Tratamento Crescimento Rápido com Biotina
+                            </p>
+                            <p class="descricaoProduto">
+                                Formulada com <span>Biotina e Extrato
+                                de
+                                Jaborandi</span>,
+                                estimulando o crescimento capilar saudável. Esta ampola age diretamente no couro
+                                cabeludo,
+                                <span>revitalizando os
+                                folículos capilares</span> e fortalecendo os fios desde a raiz. Use semanalmente para obter
+                                cabelos
+                                mais longos,
+                                fortes e saudáveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="proximo" onclick="moverParaDireita()">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="secaoParceiro">
+            Seja um Parceiro (Become a Partner)
+            Benefícios de Ser Parceiro: Seção que explica porque os salões devem escolher a marca, como:
+            Suporte exclusivo: “Treinamentos para profissionais de beleza”.
+            Descontos exclusivos: “Preços especiais para grandes pedidos”.
+            Ferramentas de Marketing: Fornecimento de materiais promocionais.
+            Formulário de Cadastro: Um formulário simples para salões de beleza se inscreverem como parceiros.
+            Histórias de Sucesso: Depoimentos fictícios de salões que viram seus negócios crescerem ao usar os produtos.
+        </section>
     </main>
 
     <footer>
+        <ul class="listas" id="listaMenuFooter">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobreNos">Sobre</a></li>
+            <li><a href="#nossosProdutos">Produtos</a></li>
+            <li><a href="#nossoTime">Orçamento</a></li>
+            <li><a href="#infosRodape">Seja um Parceiro</a></li>
+        </ul>
+
+        <div id="logoCabecalho">
+            <img src="./imagens/icons/logo.png" alt=".">
+            <p id="nomeCabecalho">Beleza da Terra</p>
+        </div>
+
+        <ul class="listas" id="listaMenuFooter">
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
+            <li>
+                <a href="#sobreNos">Sobre</a>
+            </li>
+            <li>
+                <a href="#nossosProdutos">Produtos</a>
+            </li>
+            <li>
+                <a href="#nossoTime">Orçamento</a>
+            </li>
+            <li>
+                <a href="#infosRodape">Seja um Parceiro</a>
+            </li>
+        </ul>
+
+        copyright 
 
     </footer>
 </body>
+
 </html>
