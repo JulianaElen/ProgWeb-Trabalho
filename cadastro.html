@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responStyle.css">
+    <link rel="stylesheet" type="text/css" href="darkStyle.css">
+
+    <script defer type="text/javascript" src="codigo.js"></script>
+
+    <!-- Icone do site -->
+    <link rel="icon" href="./imagens/icons/logo-branco.jpeg">
+
+    <!-- Fontes usadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <title>Beleza da Terra - Cadastro</title>
+</head>
+
+<body id="bodyCadastro">
+    <!-- Menu de navegação -->
+    <nav>
+        <div id="logoMenu">
+            <img src="./imagens/icons/logo.png" alt=".">
+            <p>Beleza da Terra</p>
+        </div>
+        <ul class="listas" id="listaMenu">
+            <li><a href="./index.html#itensCabecalho">Início</a></li>
+            <li><a href="./index.html#secaoSobre">Sobre</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./cadastro.html">Seja um Parceiro</a></li>
+            <li><a href="./teste.html">Meu produto</a></li>
+            <!--inserindo o botão de por dark mode -->
+            <li>
+                <input type="checkbox" id="darkModeCheck">
+                <label for="darkModeCheck" id="darkModeLabel"></label>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mainGeral">
+
+        <div class="containerTitulos">
+            <img class="iconLinha" id="linhaE" src="./imagens/icons/linhaE.png" alt="">
+            <p class="tituloPaginas"> Faça seu cadastro, que entraremos em contato. </p>
+            <img class="iconLinha" id="LinhaD" src="./imagens/icons/linhaD.png" alt="">
+        </div>
+
+        <div id="fundoFormulario">
+            <div class="containerFormulario">
+                <h2>Formulário de Cadastro</h2>
+                <form>
+                    <div class="itemFormulario">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="cpfCnpj">CPF/CNPJ</label>
+                        <input type="text" id="cpfCnpj" placeholder="000-000-000.00" name="cpfCnpj" required pattern="\d{11}|\d{14}"
+                            title="Digite 11 dígitos para CPF ou 14 dígitos para CNPJ">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="endereco">Endereço Completo</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua, 00, Bairro">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="complemento">CPF</label>
+                        <div>
+                            <input type="text" id="cep" name="cep" class="formMenor" placeholder="CEP" required
+                                pattern="\d{5}-?\d{3}" title="Digite o CEP no formato 00000-000">
+                        </div>
+                    </div>
+                    <div class="itemFormulario">
+                        <label for="complemento">Complemento</label>
+                        <div>
+                            <input type="text" id="complemento" name="complemento" class="formMenor">
+                        </div>
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="cidade">Cidade e Estado</label>
+                        <div id="cidadeEstado">
+                            <input type="text" id="cidade" name="cidade" class="formMenor" placeholder="Cidade"
+                                required>
+                            <select id="estado" name="estado" class="formMenor" required>
+                                <option value="">Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s?\d{4,5}-?\d{4}"
+                            placeholder="(00) 00000-0000" title="Digite o telefone no formato (00) 00000-0000">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="maisInformacoes">Comentarios</label>
+                        <textarea id="maisInformacoes" name="maisInformacoes" rows="4"
+                            placeholder="Escreva suas dúvidas ou comentários aqui..."></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="botaoVerde">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Botão do whatsApp -->
+        <section>
+            <a href="https://api.whatsapp.com/send/?phone=5531996482086&text=Vim-pelo-site!" class="whatsappButton"
+                target="_blank">
+                <img src="imagens/icons/whatsapp.png" alt="WhatsApp">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div id="containerFooter">
+
+
+            <ul class="listas" id="listaMenuFooter">
+                <li><a href="./index.html#itensCabecalho">Início</a></li>
+                <li><a href="./index.html#secaoSobre">Sobre</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./cadastro.html">Seja um Parceiro</a></li>
+                <li><a href="./teste.html">Meu produto</a></li>
+            </ul>
+
+            <div id="logoFooter">
+                <img src="./imagens/icons/logo.png" alt=".">
+                <p id="nomeFooter">Beleza da Terra</p>
+            </div>
+
+            <ul class="listas" id="listaContatos">
+                <li><img src="./imagens/icons/instagram (1).png" alt="icone do instagram"><a href="">Intragram</a></li>
+                <li><img src="./imagens/icons/whatsapp.png" alt="icone do whatsapp"><a href="">WhatsApp</a></li>
+                <li><img src="./imagens/icons/icons8-facebook-48.png" alt="icone do facebook"><a href="">Facebook</a>
+                </li>
+                <li><img src="./imagens/icons/icons8-telefone-48.png" alt="icone de um telefone antigo"><a href="">+55
+                        31
+                        9 8888-3333</a></li>
+                <li><img src="./imagens/icons/icons8-nova-mensagem-24.png" alt="icone do email, uma carta"><a href=""
+                        id="email">belezadaterra@</a></li>
+            </ul>
+        </div>
+        <p id="copyright">Desenvolvido por Juliana Elen Silva Oliveira - © 2024, Todos os diretos reservados
+        </p>
+
+    </footer>
+</body>
+
+</html>

@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
 }
 
 /* Formatação geral para todos as listas */
@@ -123,7 +122,7 @@ input[type="checkbox"]:checked + label#darkModeLabel {
   filter: invert(100%);
 }
 
-/* Estilização do cabeçalho*/
+/* ------------Estilização do cabeçalho------------------*/
 
 /* Ajustando fundo do cabeçalho */
 header {
@@ -140,13 +139,13 @@ header {
 /* Ajustando padding dos itens no cabeçalho */
 #itensCabecalho {
   text-align: right;
-  padding-top: 13em;
+  padding-top: 24vh;
   padding-left: 32rem;
 }
 
 /* ajustando logo no cabeçalho */
 #itensCabecalho img {
-  width: 14.5em;
+  width: 14.5rem;
 }
 
 /* Ajustando texto no cabeçalho */
@@ -265,7 +264,7 @@ header {
 }
 
 /* Elemanteo de separação de seçao */
-#imagensSeparacaoSobre {
+.imagensSeparacao {
   display: flex;
   align-items: center;
 }
@@ -299,7 +298,7 @@ header {
 #containerSobreIngredientes {
   display: flex;
   margin: 2rem 8rem;
-  flex-wrap: wrap;
+
 }
 
 .sobreIngrediente {
@@ -378,6 +377,14 @@ header {
   margin: 5rem;
 }
 
+#secaoProdutos {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
 #containerInicioProdutos img {
   width: 5rem;
 }
@@ -415,11 +422,11 @@ header {
   align-items: center;
 
   /* From https://css.glass */
-  background: rgba(217, 179, 145, 0.4);
+  background: rgba(217, 179, 145, 0.6);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(64, 29, 21, 0.1);
-  backdrop-filter: blur(9.3px);
-  -webkit-backdrop-filter: blur(9.3px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(217, 179, 145, 0.3);
 }
 
@@ -450,7 +457,7 @@ header {
   background-color: rgba(140, 88, 42, 0.5);
 }
 
-.carrossel img {
+.produtos img {
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
@@ -488,11 +495,321 @@ header {
   background-repeat: no-repeat;
   align-items: center;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(50, 89, 44, 1);
+  flex-direction: column;
 }
+
+#secaoParceiro h1 {
+  text-transform: uppercase;
+  margin: 0 2rem;
+}
+
+#secaoParceiro span {
+  color: rgba(94, 166, 75, 1);
+}
+
+#secaoParceiro li {
+  margin: 1rem 2rem;
+}
+
+#secaoParceiro p {
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#textosSecaoParceiro {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
 
 /* --------------------Rodape (footer) -------------------------*/
 
 footer {
   background-color: rgba(191, 140, 111, 1);
-  height: 300px;
+  height: 400px;
+}
+
+#containerFooter {
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+}
+
+#logoFooter {
+  margin: 4rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#logoFooter img {
+  width: 10rem;
+}
+
+#nomeFooter {
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4rem;
+  color: rgba(50, 89, 44, 1);
+  margin-top: 5px;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(64, 29, 21, 0.7);
+}
+
+
+#listaMenuFooter a {
+  text-decoration: none;
+  color: rgba(38, 10, 4, 1);
+  text-shadow: 2px 2px 4px rgba(115, 60, 29, 0.05);
+
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+#containerFooter li:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+#containerFooter li {
+  margin-top: 1rem;
+  font-size: large;
+  margin: 2rem 2rem;
+}
+
+#listaContatos {
+  text-align: right;
+align-items: center;
+justify-content: center;
+}
+
+#listaContatos img {
+  width: 1.2rem;
+  margin-right: 10px;
+  opacity: 80%;
+  filter: saturate(50%);
+}
+
+#listaContatos a {
+  text-decoration: none;
+  color: rgba(38, 10, 4, 1);
+}
+
+/* ------- Botões -------- */
+
+.botaoVerde {
+  background-color: rgba(94, 166, 75, 0.8); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  color: white;             
+  padding: 20px 40px;       
+  font-size: 16px;           
+  border: none;             
+  border-radius: 15px;        
+  cursor: pointer;            
+  text-decoration: none;   
+}
+
+.botaoVerde:hover {
+  background-color:rgba(50, 89, 44, 1);; 
+}
+
+/* ------botão do Whats-------- */
+
+.whatsappButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50px;
+}
+
+.whatsappButton img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsappButton img:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* PRODUTOS PRODUTOS PRODUTOS */
+
+#bodyProdutos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('imagens/outros/potesJoias.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mainGeral {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerTitulos {
+  padding-top: 150px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 3rem;
+}
+
+.tituloPaginas {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(50, 89, 44, 1);
+  padding: 1rem 0;
+  background: rgba(217, 179, 145, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(64, 29, 21, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(217, 179, 145, 0.3);
+  margin: 0 1rem;
+}
+
+#listaPagProdutos {
+  margin: 3rem;
+}
+
+#listaPagProdutos span {
+  color: rgb(58, 107, 50);
+}
+
+#listaPagProdutos .produtos {
+  margin-top: 2rem;
+}
+
+#botaoProdutos {
+  margin-bottom: 3rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* CADATRO CADASTRO CADASTRO */
+
+#bodyCadastro {
+  background-image: url(imagens/outros/oleoGrande.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.containerFormulario {
+  max-width: 600px;
+  margin: 2rem;
+  padding: 30px 80px;
+
+  background: rgba(217, 179, 145, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(64, 29, 21, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 179, 145, 0.3);
+}
+
+.containerFormulario h2 {
+  margin-bottom: 1rem;
+}
+
+.itemFormulario {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.itemFormulario input, 
+.itemFormulario select, 
+.itemFormulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(50, 89, 44, 1);;
+  border-radius: 4px;
+}
+
+#cidadeEstado {
+  display: flex;
+}
+
+.itemFormulario textarea {
+  resize: vertical;
+}
+
+.itemFormulario .formMenor {
+  width: calc(50% - 10px);
+  display: inline-block;
+}
+
+.itemFormulario .formMenor:first-child {
+  margin-right: 20px;
+}
+
+.itemFormulario button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.itemFormulario button:hover {
+  background-color: #218838;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* TESTE TESTE TESTE */
+
+#bodyTeste {
+  background-image: url(imagens/outros/pote1.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#formularioTeste {
+
+  padding: 3rem 5rem;
+  background: rgba(217, 179, 145, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(64, 29, 21, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 179, 145, 0.3);
 }

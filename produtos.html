@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responStyle.css">
+    <link rel="stylesheet" type="text/css" href="darkStyle.css">
+
+    <script defer type="text/javascript" src="codigo.js"></script>
+
+    <!-- Icone do site -->
+    <link rel="icon" href="./imagens/icons/logo-branco.jpeg">
+
+    <!-- Fontes usadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <title>Beleza da Terra - Produtos </title>
+</head>
+
+<body id="bodyProdutos">
+    <!-- Menu de navegação -->
+    <nav>
+        <div id="logoMenu">
+            <img src="./imagens/icons/logo.png" alt=".">
+            <p>Beleza da Terra</p>
+        </div>
+        <ul class="listas" id="listaMenu">
+            <li><a href="./index.html#itensCabecalho">Início</a></li>
+            <li><a href="./index.html#secaoSobre">Sobre</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./cadastro.html">Seja um Parceiro</a></li>
+            <li><a href="./teste.html">Meu produto</a></li>
+            <!--inserindo o botão de por dark mode -->
+            <li>
+                <input type="checkbox" id="darkModeCheck">
+                <label for="darkModeCheck" id="darkModeLabel"></label>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mainGeral">
+        <div class="containerTitulos">
+            <img class="iconLinha" id="linhaE" src="./imagens/icons/linhaE.png" alt="">
+            <p class="tituloPaginas" id="tituloProdutos"> Conheça mais sobre nossos Produtos </p>
+            <img class="iconLinha" id="LinhaD" src="./imagens/icons/linhaD.png" alt="">
+        </div>
+
+        <div class="listaProdutos" id="listaPagProdutos">
+            <div class="produtos">
+                <img src="./imagens/produtos/shampoo.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Shampoo Natural Brilho Vital
+                    </p>
+                    <p class="descricaoProduto">
+                        Limpa suavemente os fios, preservando os
+                        óleos naturais do
+                        cabelo e deixando um <span>brilho radiante</span>. Formulado com <span>Açaí</span> do
+                        Pará, conhecido por suas
+                        propriedades
+                        antioxidantes, e <span>Cupuaçu</span> da Amazônia, que hidrata profundamente e repara os
+                        danos
+                        causados pela exposição ao
+                        sol e poluição. Ideal para <span>todos os tipos de cabelo</span>, especialmente cabelos
+                        secos ou
+                        opacos.                      
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Açaí do Pará: Rico em antioxidantes e vitamina E.
+                        <br>
+                        Cupuaçu da Amazônia: Hidrata e nutre profundamente.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span> Hidratação, brilho intenso e proteção antioxidante.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Todos os tipos.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/mascara.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Máscara de Hidratação Intensa com Murumuru
+                    </p>
+                    <p class="descricaoProduto">
+                        Perfeita para cabelos
+                        extremamente secos e
+                        danificados. A manteiga de <span>Murumuru</span>, proveniente da região Amazônica,
+                        penetra
+                        profundamente nos fios,
+                        restaurando a <span>maciez e o brilho perdidos</span>. Esta máscara atua como uma
+                        reparação
+                        profunda, proporcionando
+                        <span>hidratação intensa</span> e desembaraçando os cabelos com facilidade. Ideal para
+                        uso
+                        semanal em salões ou em casa.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Manteiga de Murumuru: Rica em ácidos graxos que nutrem profundamente.
+                        <br>
+                        Óleo de Buriti: Protege contra os danos causados pelo sol e calor.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span> Reparação intensa, hidratação profunda e cabelos mais macios e fáceis de pentear.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Cabelos secos, danificados ou quimicamente tratados.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/oleo2.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Óleo Capilar Reparador Buriti & Pracaxi
+                    </p>
+                    <p class="descricaoProduto">
+                        Ideal para cabelos
+                        danificados ou quimicamente
+                        tratados. O <span>óleo de Buriti</span>, extraído do Cerrado brasileiro, é rico em
+                        pró-vitamina
+                        A, que protege os cabelos
+                        contra os danos causados pelo sol. O <span>óleo de Pracaxi</span>, vindo da Amazônia,
+                        ajuda a
+                        <span>restaurar a elasticidade e
+                            força dos fios</span>, controlando o frizz e as pontas duplas. Pode ser utilizado
+                        antes ou
+                        após a secagem, como
+                        tratamento noturno ou para finalizar penteados.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Óleo de Buriti: Proteção UV natural.
+                        <br>
+                        Óleo de Pracaxi: Fortalece e melhora a elasticidade dos fios.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span>  Redução do frizz, proteção contra danos e brilho duradouro.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Cabelos danificados, com frizz e pontas duplas.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/serum.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Sérum Anti-Frizz Nature Castanha-do-Pará
+                    </p>
+                    <p class="descricaoProduto">
+                        Solução leve e eficaz para cabelos
+                        rebeldes. Enriquecido com óleo
+                        de <span>Castanha-do-Pará</span>, nativa da Floresta Amazônica, este sérum cria uma
+                        barreira
+                        protetora ao redor do fio,
+                        bloqueando a umidade e prevenindo o frizz. Ideal para ser usado como finalizador,
+                        deixando os cabelos com um
+                        toque <span>sedoso e leve</span>, sem pesar. Adequado para qualquer clima, especialmente
+                        para
+                        ambientes úmidos.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Óleo de Castanha-do-Pará: Restaura a maciez e sela a cutícula.
+                        <br>
+                        Extrato de Copaíba: Protege contra umidade e fortalece o cabelo.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span> Controle de frizz, proteção contra umidade e suavidade.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Todos os tipos, especialmente cabelos propensos ao frizz.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/condicionador.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Condicionador Nutritivo de Açaí e Cupuaçu
+                    </p>
+                    <p class="descricaoProduto">
+                        Desembaraça e hidrata os fios
+                        de maneira profunda,
+                        trazendo de volta a <span>maciez e o brilho</span> natural do cabelo. O
+                        <span>Açaí</span>, com suas
+                        propriedades antioxidantes,
+                        combate os radicais livres e o Cupuaçu, com sua capacidade de reter água,
+                        proporciona uma <span>hidratação
+                            prolongada</span>, deixando os cabelos macios e protegidos contra agressões
+                        externas.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Açaí do Pará: Antioxidante poderoso que rejuvenesce os fios.
+                        <br>
+                        Cupuaçu da Amazônia: Hidratação profunda e prolongada.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span>  Hidratação intensa, desembaraço fácil e brilho duradouro.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Cabelos normais a secos.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/leave-in.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Leave-in Fortalecedor com Queratina Vegetal </p>
+                    <p class="descricaoProduto">
+                        Fórmula sem enxágue que ajuda a fortalecer
+                        os fios da raiz às
+                        pontas. Contém <span>Queratina Vegetal</span> e <span>Óleo de Andiroba, que
+                            penetram</span> no cabelo e
+                        <span>reparam danos</span> causados por
+                        química e calor. Oferece uma proteção térmica eficaz, sendo ideal para uso antes de
+                        secadores e pranchas.
+                        Mantém os <span>cabelos suaves e maleáveis</span> durante todo o dia.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Queratina Vegetal: Repara e reconstrói os fios.
+                        <br>
+                        Óleo de Andiroba: Protege e fortalece o cabelo.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span>  Fortalecimento, proteção térmica e redução da quebra.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Cabelos fracos ou danificados.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/spray.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Spray Revitalizante Água de Coco & Babosa
+                    </p>
+                    <p class="descricaoProduto">
+                        Perfeito para hidratar os
+                        cabelos ao longo do dia,
+                        proporcionando <span>frescor e revitalização</span> instantâneos. A <span>Água de
+                            Coco</span> ajuda a repor os
+                        minerais e vitaminas
+                        dos fios, enquanto a <span>Babosa</span> promove uma hidratação leve, sem pesar. Pode
+                        ser
+                        aplicado nos cabelos úmidos ou
+                        secos, ideal para o uso diário.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Água de Coco: Hidratação leve e refrescante.
+                        <br>
+                        Babosa (Aloe Vera): Nutre e hidrata suavemente.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span> Hidratação leve e revitalização instantânea.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Todos os tipos.
+                    </p>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="./imagens/produtos/ampola.jpg" alt="">
+                <div class="textoProduto">
+                    <p class="nomeProduto">
+                        Ampola de Tratamento Crescimento Rápido com Biotina
+                    </p>
+                    <p class="descricaoProduto">
+                        Formulada com <span>Biotina e Extrato
+                            de
+                            Jaborandi</span>,
+                        estimulando o crescimento capilar saudável. Esta ampola age diretamente no couro
+                        cabeludo,
+                        <span>revitalizando os
+                            folículos capilares</span> e fortalecendo os fios desde a raiz. Use semanalmente
+                        para obter
+                        cabelos
+                        mais longos,
+                        fortes e saudáveis.
+                    </p>
+                    <br>
+                    <p class="descricaoProduto">
+                        <span>Ingredientes Principais:</span> <br>
+                        Biotina: Estimula o crescimento e fortalece o cabelo.
+                        <br>
+                        Extrato de Jaborandi: Fortalece a raiz e combate a queda.
+                        <br>
+                        <br>
+                        <span>Benefícios:</span> Crescimento acelerado, fortalecimento dos fios e redução da queda.
+                        <br>
+                        <br>
+                        <span>Tipo de Cabelo:</span> Cabelos com queda ou de crescimento lento.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="botaoProdutos" class="botaoVerde" onclick="irParaCadastro()">Adquira nossos produtos</button>
+
+        <!-- Botão do whatsApp -->
+        <section>
+            <a href="https://api.whatsapp.com/send/?phone=5531996482086&text=Vim-pelo-site!" class="whatsappButton"
+                target="_blank">
+                <img src="imagens/icons/whatsapp.png" alt="WhatsApp">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div id="containerFooter">
+
+
+            <ul class="listas" id="listaMenuFooter">
+                <li><a href="./index.html#itensCabecalho">Início</a></li>
+                <li><a href="./index.html#secaoSobre">Sobre</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./cadastro.html">Seja um Parceiro</a></li>
+                <li><a href="./teste.html">Meu produto</a></li>
+            </ul>
+
+            <div id="logoFooter">
+                <img src="./imagens/icons/logo.png" alt=".">
+                <p id="nomeFooter">Beleza da Terra</p>
+            </div>
+
+            <ul class="listas" id="listaContatos">
+                <li><img src="./imagens/icons/instagram (1).png" alt="icone do instagram"><a href="">Intragram</a></li>
+                <li><img src="./imagens/icons/whatsapp.png" alt="icone do whatsapp"><a href="">WhatsApp</a></li>
+                <li><img src="./imagens/icons/icons8-facebook-48.png" alt="icone do facebook"><a href="">Facebook</a>
+                </li>
+                <li><img src="./imagens/icons/icons8-telefone-48.png" alt="icone de um telefone antigo"><a href="">+55
+                        31
+                        9 8888-3333</a></li>
+                <li><img src="./imagens/icons/icons8-nova-mensagem-24.png" alt="icone do email, uma carta"><a href=""
+                        id="email">belezadaterra@</a></li>
+            </ul>
+        </div>
+        <p id="copyright">Desenvolvido por Juliana Elen Silva Oliveira - © 2024, Todos os diretos reservados
+        </p>
+
+    </footer>
+</body>
+
+</html>

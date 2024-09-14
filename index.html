@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responStyle.css">
+    <link rel="stylesheet" type="text/css" href="darkStyle.css">
 
     <script defer type="text/javascript" src="codigo.js"></script>
 
@@ -36,11 +37,11 @@
             <p>Beleza da Terra</p>
         </div>
         <ul class="listas" id="listaMenu">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobreNos">Sobre</a></li>
-            <li><a href="#nossosProdutos">Produtos</a></li>
-            <li><a href="#nossoTime">Orçamento</a></li>
-            <li><a href="#infosRodape">Seja um Parceiro</a></li>
+            <li><a href="./index.html#itensCabecalho">Início</a></li>
+            <li><a href="./index.html#secaoSobre">Sobre</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./cadastro.html">Seja um Parceiro</a></li>
+            <li><a href="./teste.html">Meu produto</a></li>
             <!--inserindo o botão de por dark mode -->
             <li>
                 <input type="checkbox" id="darkModeCheck">
@@ -79,7 +80,7 @@
         </section>
 
         <section id="secaoSobre">
-            <div id="imagensSeparacaoSobre">
+            <div class="imagensSeparacao">
                 <img class="iconLinha" id="linhaE" src="./imagens/icons/linhaE.png" alt="">
                 <img id="potesSobre" src="./imagens/icons/icon-potes.png" alt="">
                 <img class="iconLinha" id="LinhaD" src="./imagens/icons/linhaD.png" alt="">
@@ -127,6 +128,7 @@
                     </div>
                 </div>
             </div>
+            <button class="botaoVerde" onclick="irParaTeste()">Descubra o seu</button>
         </section>
 
         <section id="secaoProdutos">
@@ -152,11 +154,14 @@
                             <p class="descricaoProduto">
                                 Limpa suavemente os fios, preservando os
                                 óleos naturais do
-                                cabelo e deixando um  <span>brilho radiante</span>. Formulado com <span>Açaí</span> do Pará, conhecido por suas
+                                cabelo e deixando um <span>brilho radiante</span>. Formulado com <span>Açaí</span> do
+                                Pará, conhecido por suas
                                 propriedades
-                                antioxidantes, e <span>Cupuaçu</span> da Amazônia, que hidrata profundamente e repara os danos
+                                antioxidantes, e <span>Cupuaçu</span> da Amazônia, que hidrata profundamente e repara os
+                                danos
                                 causados pela exposição ao
-                                sol e poluição. Ideal para <span>todos os tipos de cabelo</span>, especialmente cabelos secos ou
+                                sol e poluição. Ideal para <span>todos os tipos de cabelo</span>, especialmente cabelos
+                                secos ou
                                 opacos.
                             </p>
                         </div>
@@ -170,11 +175,14 @@
                             <p class="descricaoProduto">
                                 Perfeita para cabelos
                                 extremamente secos e
-                                danificados. A manteiga de <span>Murumuru</span>, proveniente da região Amazônica, penetra
+                                danificados. A manteiga de <span>Murumuru</span>, proveniente da região Amazônica,
+                                penetra
                                 profundamente nos fios,
-                                restaurando a <span>maciez e o brilho perdidos</span>. Esta máscara atua como uma reparação
+                                restaurando a <span>maciez e o brilho perdidos</span>. Esta máscara atua como uma
+                                reparação
                                 profunda, proporcionando
-                                <span>hidratação intensa</span> e desembaraçando os cabelos com facilidade. Ideal para uso
+                                <span>hidratação intensa</span> e desembaraçando os cabelos com facilidade. Ideal para
+                                uso
                                 semanal em salões ou em casa.
                             </p>
                         </div>
@@ -188,11 +196,14 @@
                             <p class="descricaoProduto">
                                 Ideal para cabelos
                                 danificados ou quimicamente
-                                tratados. O <span>óleo de Buriti</span>, extraído do Cerrado brasileiro, é rico em pró-vitamina
+                                tratados. O <span>óleo de Buriti</span>, extraído do Cerrado brasileiro, é rico em
+                                pró-vitamina
                                 A, que protege os cabelos
-                                contra os danos causados pelo sol. O <span>óleo de Pracaxi</span>, vindo da Amazônia, ajuda a
+                                contra os danos causados pelo sol. O <span>óleo de Pracaxi</span>, vindo da Amazônia,
+                                ajuda a
                                 <span>restaurar a elasticidade e
-                                força dos fios</span>, controlando o frizz e as pontas duplas. Pode ser utilizado antes ou
+                                    força dos fios</span>, controlando o frizz e as pontas duplas. Pode ser utilizado
+                                antes ou
                                 após a secagem, como
                                 tratamento noturno ou para finalizar penteados.
                             </p>
@@ -207,11 +218,13 @@
                             <p class="descricaoProduto">
                                 Solução leve e eficaz para cabelos
                                 rebeldes. Enriquecido com óleo
-                                de <span>Castanha-do-Pará</span>, nativa da Floresta Amazônica, este sérum cria uma barreira
+                                de <span>Castanha-do-Pará</span>, nativa da Floresta Amazônica, este sérum cria uma
+                                barreira
                                 protetora ao redor do fio,
                                 bloqueando a umidade e prevenindo o frizz. Ideal para ser usado como finalizador,
                                 deixando os cabelos com um
-                                toque <span>sedoso e leve</span>, sem pesar. Adequado para qualquer clima, especialmente para
+                                toque <span>sedoso e leve</span>, sem pesar. Adequado para qualquer clima, especialmente
+                                para
                                 ambientes úmidos.
                             </p>
                         </div>
@@ -225,11 +238,13 @@
                             <p class="descricaoProduto">
                                 Desembaraça e hidrata os fios
                                 de maneira profunda,
-                                trazendo de volta a <span>maciez e o brilho</span> natural do cabelo. O <span>Açaí</span>, com suas
+                                trazendo de volta a <span>maciez e o brilho</span> natural do cabelo. O
+                                <span>Açaí</span>, com suas
                                 propriedades antioxidantes,
                                 combate os radicais livres e o Cupuaçu, com sua capacidade de reter água,
                                 proporciona uma <span>hidratação
-                                prolongada</span>, deixando os cabelos macios e protegidos contra agressões externas.
+                                    prolongada</span>, deixando os cabelos macios e protegidos contra agressões
+                                externas.
                             </p>
                         </div>
                     </div>
@@ -241,7 +256,8 @@
                             <p class="descricaoProduto">
                                 Fórmula sem enxágue que ajuda a fortalecer
                                 os fios da raiz às
-                                pontas. Contém <span>Queratina Vegetal</span> e <span>Óleo de Andiroba, que penetram</span> no cabelo e
+                                pontas. Contém <span>Queratina Vegetal</span> e <span>Óleo de Andiroba, que
+                                    penetram</span> no cabelo e
                                 <span>reparam danos</span> causados por
                                 química e calor. Oferece uma proteção térmica eficaz, sendo ideal para uso antes de
                                 secadores e pranchas.
@@ -258,9 +274,11 @@
                             <p class="descricaoProduto">
                                 Perfeito para hidratar os
                                 cabelos ao longo do dia,
-                                proporcionando <span>frescor e revitalização</span> instantâneos. A <span>Água de Coco</span> ajuda a repor os
+                                proporcionando <span>frescor e revitalização</span> instantâneos. A <span>Água de
+                                    Coco</span> ajuda a repor os
                                 minerais e vitaminas
-                                dos fios, enquanto a <span>Babosa</span> promove uma hidratação leve, sem pesar. Pode ser
+                                dos fios, enquanto a <span>Babosa</span> promove uma hidratação leve, sem pesar. Pode
+                                ser
                                 aplicado nos cabelos úmidos ou
                                 secos, ideal para o uso diário.
                             </p>
@@ -274,12 +292,13 @@
                             </p>
                             <p class="descricaoProduto">
                                 Formulada com <span>Biotina e Extrato
-                                de
-                                Jaborandi</span>,
+                                    de
+                                    Jaborandi</span>,
                                 estimulando o crescimento capilar saudável. Esta ampola age diretamente no couro
                                 cabeludo,
                                 <span>revitalizando os
-                                folículos capilares</span> e fortalecendo os fios desde a raiz. Use semanalmente para obter
+                                    folículos capilares</span> e fortalecendo os fios desde a raiz. Use semanalmente
+                                para obter
                                 cabelos
                                 mais longos,
                                 fortes e saudáveis.
@@ -289,52 +308,77 @@
                 </div>
                 <button class="proximo" onclick="moverParaDireita()">&#10095;</button>
             </div>
+            <button class="botaoVerde" onclick="irParaProdutos()">Confira mais informações</button>
         </section>
 
         <section id="secaoParceiro">
-            Seja um Parceiro (Become a Partner)
-            Benefícios de Ser Parceiro: Seção que explica porque os salões devem escolher a marca, como:
-            Suporte exclusivo: “Treinamentos para profissionais de beleza”.
-            Descontos exclusivos: “Preços especiais para grandes pedidos”.
-            Ferramentas de Marketing: Fornecimento de materiais promocionais.
-            Formulário de Cadastro: Um formulário simples para salões de beleza se inscreverem como parceiros.
-            Histórias de Sucesso: Depoimentos fictícios de salões que viram seus negócios crescerem ao usar os produtos.
+            <div class="imagensSeparacao">
+                <img class="iconLinha" id="linhaE" src="./imagens/icons/linhaE.png" alt="">
+                <h1>Seja um Parceiro</h1>
+                <img class="iconLinha" id="LinhaD" src="./imagens/icons/linhaD.png" alt="">
+            </div>
+            <div id="textosSecaoParceiro">
+                <p>Fique por dentro de nossos benefícios:</p>
+
+                <ul class="listas">
+                    <li>
+                        <span> Suporte exclusivo: </span>
+                        Treinamentos para profissionais de beleza.
+                    </li>
+                    <li>
+                        <span>Descontos exclusivos:</span> Preços especiais para grandes pedidos.
+                    </li>
+                    <li>
+                        <span>Ferramentas de Marketing:</span> Fornecimento de materiais promocionais.
+                    </li>
+                    <li>
+                        <span>Acesso antecipado:</span> Receba os lançamentos primeiro.
+                    </li>
+                </ul>
+            </div>
+            <button class="botaoVerde" onclick="irParaCadastro()">Faça seu Cadastro</button>
+        </section>
+
+        <!-- Botão do whatsApp -->
+        <section>
+            <a href="https://api.whatsapp.com/send/?phone=5531996482086&text=Vim-pelo-site!" class="whatsappButton"
+                target="_blank">
+                <img src="imagens/icons/whatsapp.png" alt="WhatsApp">
+            </a>
         </section>
     </main>
 
     <footer>
-        <ul class="listas" id="listaMenuFooter">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobreNos">Sobre</a></li>
-            <li><a href="#nossosProdutos">Produtos</a></li>
-            <li><a href="#nossoTime">Orçamento</a></li>
-            <li><a href="#infosRodape">Seja um Parceiro</a></li>
-        </ul>
+        <div id="containerFooter">
 
-        <div id="logoCabecalho">
-            <img src="./imagens/icons/logo.png" alt=".">
-            <p id="nomeCabecalho">Beleza da Terra</p>
+
+            <ul class="listas" id="listaMenuFooter">
+                <li><a href="./index.html#itensCabecalho">Início</a></li>
+                <li><a href="./index.html#secaoSobre">Sobre</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./cadastro.html">Seja um Parceiro</a></li>
+                <li><a href="./teste.html">Meu produto</a></li>
+            </ul>
+
+            <div id="logoFooter">
+                <img src="./imagens/icons/logo.png" alt=".">
+                <p id="nomeFooter">Beleza da Terra</p>
+            </div>
+
+            <ul class="listas" id="listaContatos">
+                <li><img src="./imagens/icons/instagram (1).png" alt="icone do instagram"><a href="">Intragram</a></li>
+                <li><img src="./imagens/icons/whatsapp.png" alt="icone do whatsapp"><a href="">WhatsApp</a></li>
+                <li><img src="./imagens/icons/icons8-facebook-48.png" alt="icone do facebook"><a href="">Facebook</a>
+                </li>
+                <li><img src="./imagens/icons/icons8-telefone-48.png" alt="icone de um telefone antigo"><a href="">+55
+                        31
+                        9 8888-3333</a></li>
+                <li><img src="./imagens/icons/icons8-nova-mensagem-24.png" alt="icone do email, uma carta"><a href=""
+                        id="email">belezadaterra@</a></li>
+            </ul>
         </div>
-
-        <ul class="listas" id="listaMenuFooter">
-            <li>
-                <a href="#inicio">Início</a>
-            </li>
-            <li>
-                <a href="#sobreNos">Sobre</a>
-            </li>
-            <li>
-                <a href="#nossosProdutos">Produtos</a>
-            </li>
-            <li>
-                <a href="#nossoTime">Orçamento</a>
-            </li>
-            <li>
-                <a href="#infosRodape">Seja um Parceiro</a>
-            </li>
-        </ul>
-
-        copyright 
+        <p id="copyright">Desenvolvido por Juliana Elen Silva Oliveira - © 2024, Todos os diretos reservados
+        </p>
 
     </footer>
 </body>
