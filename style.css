@@ -19,9 +19,6 @@ nav {
   width: 100vw;
   z-index: 1000;
 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.7px);
-  -webkit-backdrop-filter: blur(8.7px);
   background: rgba(217, 179, 145, 0.57);
 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -34,7 +31,7 @@ nav {
 #logoMenu {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 /* Imagem da logo no menu */
@@ -106,7 +103,7 @@ input[type="checkbox"] {
 }
 
 /* Colocando o icone de lua no check box */
-label#darkModeLabel {
+label#checkboxLabel {
   background-size: cover;
   background-image: url("./imagens/icons/lua-crescente.png");
   width: 1.5rem;
@@ -117,7 +114,7 @@ label#darkModeLabel {
 }
 
 /* colocando o icone de sol no checkBox quando no dark mode ativo */
-input[type="checkbox"]:checked + label#darkModeLabel {
+input[type="checkbox"]:checked+label#checkboxLabel {
   background-image: url("./imagens/icons/solar.png");
   filter: invert(100%);
 }
@@ -297,7 +294,8 @@ header {
 
 #containerSobreIngredientes {
   display: flex;
-  margin: 2rem 8rem;
+  margin: 2rem 6rem;
+  flex-wrap: wrap;
 
 }
 
@@ -804,12 +802,51 @@ justify-content: center;
 }
 
 #formularioTeste {
-
-  padding: 3rem 5rem;
+  padding: 3rem 6rem;
   background: rgba(217, 179, 145, 0.6);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(64, 29, 21, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(217, 179, 145, 0.3);
+  margin-bottom: 2rem;
+}
+
+#resultadoTeste {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#resultadoTeste p {
+  margin-top: 5rem;
+}
+
+.perguntas {
+  margin-top: 2rem;
+}
+
+.perguntas p {
+  font-size: 1.6rem;
+}
+
+.opcoes {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.opcoes label {
+  cursor: pointer;
+}
+
+#resultadoTeste p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0d3616;
+  text-transform: uppercase;
+  width: 40rem;
 }

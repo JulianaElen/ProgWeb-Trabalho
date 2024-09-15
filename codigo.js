@@ -73,7 +73,20 @@ function calculaTeste() {
 
   let resultText = '';
 
-if (total >= 8 && total <= 12) {
+  if (
+    form['q1'].value == 0 ||
+    form['q2'].value == 0 ||
+    form['q3'].value == 0 ||
+    form['q4'].value == 0 ||
+    form['q5'].value == 0 ||
+    form['q6'].value == 0 ||
+    form['q7'].value == 0 ||
+    form['q8'].value == 0 
+  ){
+    resultText = 'Responda todas as questões!';
+  }
+
+  if (total >= 8 && total <= 12) {
       resultText = 'Recomendamos o Shampoo Natural Brilho Vital!';
   } else if (total >= 13 && total <= 16) {
       resultText = 'Recomendamos o Condicionador Nutritivo de Açaí e Cupuaçu!';
@@ -93,3 +106,53 @@ if (total >= 8 && total <= 12) {
 
   document.getElementById('result').innerText = resultText;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeCheck = document.getElementById('darkModeCheck');
+  const body = document.body;
+
+  // Verifica se o usuário já selecionou um modo anteriormente
+  if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark');
+      darkModeCheck.checked = true;
+  }
+
+  darkModeCheck.addEventListener('change', () => {
+      if (darkModeCheck.checked) {
+          body.classList.add('dark');
+          localStorage.setItem('darkMode', 'enabled');
+      } else {
+          body.classList.remove('dark');
+          localStorage.setItem('darkMode', 'disabled');
+      }
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeCheck = document.getElementById('darkModeCheck');
+  const body = document.body;
+  const menuToggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('listaMenu');
+
+  // Verifica se o usuário já selecionou um modo anteriormente
+  if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark-mode');
+      darkModeCheck.checked = true;
+  }
+
+  darkModeCheck.addEventListener('change', () => {
+      if (darkModeCheck.checked) {
+          body.classList.add('dark-mode');
+          localStorage.setItem('darkMode', 'enabled');
+      } else {
+          body.classList.remove('dark-mode');
+          localStorage.setItem('darkMode', 'disabled');
+      }
+  });
+
+  menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+  });
+});
