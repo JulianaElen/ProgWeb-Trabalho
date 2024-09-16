@@ -1,44 +1,188 @@
 /* Estilos do menu de hambúrguer */
 .menuToggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .menuIcon {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: rgba(115, 60, 29, 1);
-    margin: 5px 0;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: rgba(115, 60, 29, 1);
+  margin: 5px 15px;
 }
 
-/* Estilos para o menu em telas pequenas */
-@media (max-width: 950px) {
-    #listaMenu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Ajuste conforme necessário */
-        right: 0;
-        background-color: #fff; /* Ou cor de fundo desejada */
-        width: 100%;
-        z-index: 1000;
-    }
+/* Estilos para o menu mudar */
+@media (max-width: 1024px) {
+  #listaMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    z-index: 1000;
+    height: 100vh;
+    width: 15vw;
+    background: rgba(217, 179, 145, 0.7);
+    text-align: center;
+  }
 
-    #listaMenu.active {
-        display: flex;
-    }
+  #listaMenu.active {
+    display: flex;
+  }
 
-    .menuToggle {
-        display: block;
-    }
+  .menuToggle {
+    display: block;
+  }
 
-    #logoMenu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  #logoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+
+  /* ------------Estilização do cabeçalho------------------*/
+
+  header {
+    height: 70vw;
+  }
+
+  /* Ajustando padding dos itens no cabeçalho */
+  #itensCabecalho {
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 32vh;
+  }
+
+  .sobreIngrediente {
+    width: 13rem;
+  }
+}
+
+/* Estilos para celulares */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+
+  #listaMenu {
+    width: 30vw;
+    height: 50vh;
+    right: 0;
+    margin-right: 0;
+    position: absolute;
+  }
+
+  header {
+    height: 70vw;
+  }
+
+  /* Ajustando padding dos itens no cabeçalho */
+  #itensCabecalho {
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 18vh;
+  }
+
+  /* ajustando logo no cabeçalho */
+  #itensCabecalho img {
+    width: 7rem;
+  }
+
+  /* Ajustando texto no cabeçalho */
+  #logoCabecalho p {
+    font-size: 4em;
+  }
+
+  /* Estilizando o slogam no cabeçalho */
+  #sloganCabecalho {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /* Imagens dos beneficios */
+  .itemBeneficio img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  /* Divs de itens dos beneficios */
+  .itemBeneficio {
+    margin: 1rem 1rem;
+  }
+
+  #potesSobre {
+    margin: 1rem 1rem;
+  }
+
+  .iconLinha {
+    height: 0.8rem;
+  }
+  
+
+  #sobreTextos {
+    margin: 0 1.5rem;
+  }
+
+  .sobreIngrediente {
+    margin-right: 1rem;
+    width: 20rem;
+  }
+  .sobreIngrediente {
+    margin-bottom: 0;
+    padding: 0.5rem;
+  }
+  .sobreIngrediente:last-child {
+    margin-top: 1rem;
+  }
+  .sobreIngrediente:first-child {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  #containerSobreIngredientes {
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .sobreIngrediente {
+    width: 35rem;
+    height: 20rem;
+  }
+  
+  .produtos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .produtos img {
+    width: 25rem;
+    height: 25rem;
+    margin: 0;
+  }
+
+  #containerInicioProdutos p {
+    font-size: 1rem;
+  }
+
+  #formularioTeste {
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+  }
+
+  #resultadoTeste p {
+    width: 30rem;
+  }
 }
