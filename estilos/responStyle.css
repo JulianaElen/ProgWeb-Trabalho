@@ -75,6 +75,11 @@
   .sobreIngrediente {
     width: 13rem;
   }
+
+    /* Estilizando o slogam no cabeçalho */
+    #sloganCabecalho {
+      font-size: 2rem;
+    }
 }
 
 /* Estilos para celulares */
@@ -114,9 +119,9 @@
 
   /* Estilizando o slogam no cabeçalho */
   #sloganCabecalho {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-right: 1rem;
   }
 
