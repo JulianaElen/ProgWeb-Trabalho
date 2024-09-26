@@ -1,3 +1,6 @@
+/* Juliana Elen Silva Oliveira */
+/* RA: 2021005540 */
+
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +108,7 @@ input[type="checkbox"] {
 /* Colocando o icone de lua no check box */
 label#checkboxLabel {
   background-size: cover;
-  background-image: url("./imagens/icons/lua-crescente.png");
+  background-image: url("../imagens/icons/lua-crescente.png");
   width: 1.5rem;
   height: 1.5rem;
   display: inline-block;
@@ -115,7 +118,7 @@ label#checkboxLabel {
 
 /* colocando o icone de sol no checkBox quando no dark mode ativo */
 input[type="checkbox"]:checked+label#checkboxLabel {
-  background-image: url("./imagens/icons/solar.png");
+  background-image: url("../imagens/icons/solar.png");
   filter: invert(100%);
 }
 
@@ -125,7 +128,7 @@ input[type="checkbox"]:checked+label#checkboxLabel {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("./imagens/fundos/fundoFinal2.jpg");
+  background-image: url("../imagens/fundos/fundoFinal2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -248,7 +251,7 @@ header {
 /* ----------------- Seção de sobre nós ----------------*/
 
 #secaoSobre {
-  background-image: url("./imagens/fundos/acai.jpg");
+  background-image: url("../imagens/fundos/acai.jpg");
   background-size: cover;
   width: 100vw;
   height: 1120px;
@@ -310,7 +313,7 @@ header {
   border: 1px solid rgba(94, 166, 75, 0.4);
   margin-right: 2rem;
 
-  width: 20rem;
+  width: 18rem;
 
   padding: 1rem;
   align-items: center;
@@ -488,7 +491,7 @@ header {
 #secaoParceiro {
   width: 100vw;
   height: 1000px;
-  background-image: url("./imagens/fundos/folhas.jpg");
+  background-image: url("../imagens/fundos/folhas.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -534,7 +537,7 @@ header {
 
 footer {
   background-color: rgba(191, 140, 111, 1);
-  height: 400px;
+  height: 70vh;
 }
 
 #containerFooter {
@@ -568,6 +571,12 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: rgba(64, 29, 21, 0.7);
+}
+
+#paginaSobre {
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(64, 29, 21, 1);
 }
 
 
@@ -655,7 +664,7 @@ justify-content: center;
 #bodyProdutos {
   width: 100vw;
   height: 100vh;
-  background-image: url('imagens/outros/potesJoias.jpg');
+  background-image: url('../imagens/outros/potesJoias.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -714,7 +723,7 @@ justify-content: center;
 /* CADATRO CADASTRO CADASTRO */
 
 #bodyCadastro {
-  background-image: url(imagens/outros/oleoGrande.jpg);
+  background-image: url(../imagens/outros/oleoGrande.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -793,7 +802,7 @@ justify-content: center;
 /* TESTE TESTE TESTE */
 
 #bodyTeste {
-  background-image: url(imagens/outros/pote1.jpg);
+  background-image: url(../imagens/outros/pote1.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -850,4 +859,34 @@ justify-content: center;
   color: #0d3616;
   text-transform: uppercase;
   width: 40rem;
+}
+
+
+/* ---------------------- */
+/* Pagina sobre */
+#mainSobreSite {
+  background-image: url(../imagens/fundos/folhas.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 15rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(44, 78, 39);
+}
+
+#mainSobreSite h1 {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#mainSobreSite p {
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 0 3rem;
+}
+
+#mainSobreSite span {
+  color: rgba(94, 166, 75, 1);
 }

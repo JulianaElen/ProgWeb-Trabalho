@@ -1,3 +1,6 @@
+/* Juliana Elen Silva Oliveira */
+/* RA: 2021005540 */
+
 /* Estilos do menu de hambúrguer */
 .menuToggle {
   display: none;
@@ -42,6 +45,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  footer {
+    height: 50vh;
+    text-align: center;
   }
 }
 
